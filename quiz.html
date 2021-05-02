@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIZ</title>
+</head>
+<body>
+    <strong>
+        <form name="myform" class="rang">
+         Q1.what is the capital of Uzbekistan?<br>
+         <input type="radio" name="q1" value="a">Tashkent<br>
+         <input type="radio" name="q1" value="b">Bukhara<br>
+         <input type="radio" name="q1" value="c">Samarqand<br><br><br>
+
+          Q2. what is capital of USA?<br>
+          <input type="radio" name="q3" value="a">London<br>
+          <input type="radio" name="q3" value="b">Washington<br>
+          <input type="radio" name="q3" value="c">New york<br><br>
+        
+          Q3. which country is the smallest?<br>
+          <input type="radio" name="q4" value="a">venezuela<br>
+          <input type="radio" name="q4" value="b">Vatican<br>
+          <input type="radio" name="q4" value="c">Australia<br><br>
+        
+          Q4. what is HTML stands for?<br>
+           <input type="radio" name="q5" value="a">Hyper text Markup language<br>
+           <input type="radio" name="q5" value="b">hyper text transfer protocol<br>
+          <input type="radio" name="q5" value="c">hyper transfer makeup leusire<br><br>
+        
+          Q5. Which train is the fastest train in the world?<br>
+          <input type="radio" name="q6" value="a">Shanghai Maglev<br>
+          <input type="radio" name="q6" value="b">Shinkansen H5 and E5<br>
+          <input type="radio" name="q6" value="c">Haramain Western Railway<br><br>
+<!--made by Abdulaziz raxmatov -->
+        <input class="btn" type="button" value="submit" onclick="check()">
+    </form>    
+    </strong>
+    <style>
+        body {
+background-image:url(https://images.pexels.com/photos/256468/pexels-photo-256468.jpeg?auto=compress&cs);
+background-size: cover;
+background-attachment: fixed;
+}
+.btn
+{
+padding: 10px 20px;
+border: 0;
+background: yellow;
+font-weight: bold;
+cursor: pointer;
+}
+.rang
+{
+    color: yellow;
+}
+/*made by Abdulaziz*/
+    </style>
+    <script>
+                function check() {
+            var q1=document.myform.q1.value;
+            var q3=document.myform.q3.value;
+            var q4=document.myform.q4.value;
+            var q5=document.myform.q5.value;
+            var q6=document.myform.q6.value;
+            var count=0;
+
+            if (q1=="a") {
+                count++;
+            }
+            
+            if (q3=="b") {
+                count++;
+            }
+            
+            if (q4=="b") {
+                count++;
+            }
+            if (q5=="a") {
+                count++;
+            }
+            if (q6=="a") {
+                count++;
+            }
+            alert("you got "+ count +" marks")
+            
+        }
+        //Abdulaziz Raxmatov
+    </script>
+</body>
+</html>
